@@ -18,13 +18,36 @@ class Matrix
 		
 		for(int i=0; i<m; i++){
 		    s = br.readLine().split(" ");
-		    
+		    //System.out.println(s);
+		    String ness="";
+	        for (String k:s) {
+	            ness=ness+k;
+	        }
+	        //System.out.println(ness);
+	        char[] cness = ness.toCharArray();
+	        
 		    for (int j=0; j<n; j++) {
-                a[i][j] = 
+		        
+                
+                a[i][j] = cness[j];
 		    }
 		    
 		}
 		
-		S
+		//display a
+		
+		
+		for (int i=0; i<m; i++ ) {
+		    
+		    for (int j=0; j<n; j++) {
+		        System.out.print(a[i][j]);   
+		    }
+		    System.out.println();
+		}
+		
+		
+		String pat = br.readLine();
+	    System.out.println("pattern "+pat);
+		
 	}
 }
